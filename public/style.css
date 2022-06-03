@@ -1,0 +1,19 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-color: gold;
+  background-image: url(.//img/coffee.jpg);
+  background-size: cover;
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+}
+a{
+  color: rgb(255, 255, 255);
+}
+img{
+  height: 500px;
+  width:100%
+}
+.jumbotron{
+  background-color: rgba(255, 255, 255, .1);
+}

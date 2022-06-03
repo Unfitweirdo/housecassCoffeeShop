@@ -1,0 +1,44 @@
+<!-- THIS WOULD BE THE MAIN PAGE FOR CUSTOMER ORDERS -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HOUSE CASS CAFE</title>
+    <!-- <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+   
+        <form action="/savedToDatabase" method="POST"> 
+            <select name="coffeeChoice" id="">
+                <option value="Black Coffee">Black Coffee</option>
+                <option value="Iced Coffee">Iced Coffee</option>
+                <option value="Latte">Latte</option>
+                <option value="Americano">Americano</option>
+                <option value="Frappuchino">Frappuchino</option>
+                <option value="Macchiato">Macchiato</option>
+                <option value="Cappucino">Cappucino</option>
+                <option value="Puppucino">Puppucino</option>
+                <option value="Tears">Tears</option>
+                <option value="Water">Water</option>
+                <option value="Henny">Henny</option>
+                <option value="Tequila">Tequila</option>
+            </select>
+            <input type="text" placeholder="Special Instructions" name="coffeeInstructions">  
+            <input type="text" placeholder="Your name here!" name="customerName">
+            <button type="submit">SUBMIT ORDER!</button>
+          </form>
+<a class="login" href="/login">Barista Account</a>
+    
+    
+    </div>
+  </body>
+</html>

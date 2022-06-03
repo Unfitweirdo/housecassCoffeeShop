@@ -1,0 +1,32 @@
+body{
+    padding-top:80px;
+    word-wrap:break-word;
+    background-color: rgb(29, 211, 89);
+  }
+  img{
+    height: 500px;
+    width:100%
+  }
+  .adder{
+    margin-left: 450px;
+  }
+  #messages{
+     margin-right: 400px;
+    float: left;
+  }
+.hidden{
+  display: none;
+}
+.general{
+color: beige;
+}
+.liked{
+color: blue;
+}
+.hated{
+color: rgb(182, 34, 34);
+}
+.link1{
+  font-size: 20px;
+  margin-left: -130px;
+}
