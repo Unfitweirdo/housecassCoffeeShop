@@ -1,0 +1,262 @@
+body {
+    padding-top: 80px;
+    word-wrap: break-word;
+    background-color: gold;
+    background-image: url(.//img/coffee.jpg);
+    background-size: 100% 100vh;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+a {
+    color: red;
+    background: slategray;
+    font-size: 1.3em;
+    border: 1px solid red;
+    text-align: center;
+}
+
+img {
+    height: 500px;
+    width: 100%
+}
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.hc1 {
+    background-image: url(.//img/blackcoffee.jpg);
+    background-repeat: no-repeat;
+    height: 33vh;
+    background-size: contain;
+    width: 34%;
+}
+
+.hc2 {
+    background-image: url(./img/cappucino.jpg);
+    background-repeat: no-repeat;
+    height: 37vh;
+    width: 40%;
+    background-size: contain;
+}
+
+.hc3 {
+    background-image: url(.//img/espresso.jpg);
+    height: 33vh;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hc4 {
+    background-image: url(.//img/caffeeLatte.png);
+    height: 33vh;
+    width: 35%;
+    background-repeat: no-repeat;
+    background-size: 98% 32.88vh;
+}
+
+.hc5 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/macchiatto.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.ic1 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/icedCoffee.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.ic2 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/iceEspresso.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.ic3 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/icedLattee.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.ic4 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/icedCappuccino.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.ic5 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/icedMocha.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+
+.ht1 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/chaiTeaLatte.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.ht2 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/earlgraytea.png);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.ht3 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/royalenglish.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.ht4 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/honey.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.ht5 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/peach2.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.it1 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/iceblack.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.it2 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/icedLattee.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.it3 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/icechai.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.it4 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/icedgreen.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.it5 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/peach.jpg);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.bs1 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/bacon.png);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.bs2 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/turkey.png);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.bs3 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/sausage.png);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.bs4 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/eggncheese.png);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+.bs5 {
+    background-repeat: no-repeat;
+    background-image: url(.//img/SourdoughBNT.png);
+    background-size: contain;
+    height: 33vh;
+    width: 40%;
+}
+
+
+section.hotCoffee {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+section.icedCoffee {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+section.hotTea {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+section.icedTea {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+section.Breakfast.Sandwiches {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+body>div>form>div {
+    display: flex;
+}

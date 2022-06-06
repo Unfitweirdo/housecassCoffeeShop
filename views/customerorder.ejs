@@ -1,5 +1,3 @@
-<!-- THIS WOULD BE THE MAIN PAGE FOR CUSTOMER ORDERS -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,33 +10,133 @@
       rel="stylesheet"
       href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
     /> -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="customer.css" />
   </head>
   <body>
-    <div class="container">
+  <div>
    
-        <form action="/savedToDatabase" method="POST"> 
-            <select name="coffeeChoice" id="">
-                <option value="Black Coffee">Black Coffee</option>
-                <option value="Iced Coffee">Iced Coffee</option>
-                <option value="Latte">Latte</option>
-                <option value="Americano">Americano</option>
-                <option value="Frappuchino">Frappuchino</option>
-                <option value="Macchiato">Macchiato</option>
-                <option value="Cappucino">Cappucino</option>
-                <option value="Puppucino">Puppucino</option>
-                <option value="Tears">Tears</option>
-                <option value="Water">Water</option>
-                <option value="Henny">Henny</option>
-                <option value="Tequila">Tequila</option>
-            </select>
-            <input type="text" placeholder="Special Instructions" name="coffeeInstructions">  
-            <input type="text" placeholder="Your name here!" name="customerName">
-            <button type="submit">SUBMIT ORDER!</button>
-          </form>
-<a class="login" href="/login">Barista Account</a>
+    <form action="/savedToDatabase" method="POST"> 
+        
+        <section class="hotCoffee">
+          <strong>Hot Coffee: </strong>
+          
+          <div class="hc1">
+          <label for="Black Coffee"><input type='radio' name="coffeeChoice" value='Black Coffee' placeholder="Black Coffee">Black Coffee </label>
+          </div> 
+
+          <div class="hc2">
+          <label for='Cappuccino'><input  type='radio' name="coffeeChoice" value='Cappuccino'>Cappuccino</label>
+          </div>
+
+          <div class="hc3">
+          <label for='Espresso'><input  type='radio' name="coffeeChoice" value='Espresso'>Espresso</label>
+          </div>
+
+          <div class="hc4">
+          <label for='Caffe Latte'><input  type='radio' name="coffeeChoice" value='Caffe Latte'>Caffe Latte</label>
+          </div>
+
+          <div class="hc5">
+          <label for='Macchiato'><input  type='radio' name="coffeeChoice" value='Macchiato'> Macchiato</label>
+          </div>
+
+        </section>
+       
+        <section class="icedCoffee">
+          <strong>iced Coffee: </strong>
+          <div class="ic1">
+          <label for='iced Coffee'><input type='radio' name="coffeeChoice2" value='iced Coffee'> iced Coffee </label>
+          </div>
+          <div class="ic2">
+          <label for='iced Espresso'><input type='radio' name="coffeeChoice2" value='iced Espresso'> iced Espresso </label>
+          </div>
+          <div class="ic3">
+          <label for='iced Latte'><input type='radio' name="coffeeChoice2" value='iced Latte'> iced Latte </label>
+          </div>
+          <div class="ic4">
+            <label for='iced Cappuccino'><input type='radio' name="coffeeChoice2" value='iced Cappuccino'> iced Cappiccino </label>
+          </div>
+          <div class="ic5">
+            <label for='iced Mocha'><input type='radio' name="coffeeChoice2" value='iced Mocha'> iced Mocha </label>
+          </div>
+        </section>
+        
+        <section class="hotTea"> 
+          <strong >Hot Tea: </strong>
+          
+          <div class="ht1">
+            <label for='Chai Tea Latte'><input type='radio' name="coffeeChoice3" value='Chai Tea Latte'>Chai Tea Latte </label>
+          </div>
+          <div class="ht2">
+            <label for='Earl Grey Tea'><input type='radio' name="coffeeChoice3" value='Earl Grey Tea'> Earl Grey Tea </label>
+          </div> 
+          <div class="ht3">
+            <label for='Royal English Breakfast Tea'><input type='radio' name="coffeeChoice3" value='Royal English Breakfast Tea'>Royal English Breakfast Tea  </label>
+         </div>
+         <div class="ht4">
+           <label for='Honey Citrus Mint Tea'><input type='radio' name="coffeeChoice3" value='Honey Citrus Mint Tea'> Honey Citrus Mint Tea </label>
+          </div> 
+          <div class="ht5">
+            <label for='Peach Tranquility'><input type='radio' name="coffeeChoice3" value='Peach Tranquility'> Peach Tranquility </label>
+          </div>
+        </section>
+        
+        <section class="icedTea"> 
+          <strong>iced Tea: </strong>
+          <div class="it1">
+            <label for='iced Black Tea'><input type='radio' name="coffeeChoice4" value='iced Black Tea'> iced Black Tea  </label>
+          </div>
+          <div class="it2">
+            <label for='iced Tea Latte'><input type='radio' name="coffeeChoice4" value='iced Tea Latte'> iced Tea Latte  </label>
+         </div>
+         <div class="it3">
+           <label for='iced Chai Tea Latte'><input type='radio' name="coffeeChoice4" value='iced Chai Tea Latte'> iced Chai Tea Latte </label>
+          </div>
+          <div class="it4">
+            <label for='iced Green Tea'><input type='radio' name="coffeeChoice4" value='iced Green Tea'>  iced Green Tea </label>
+          </div> 
+          <div class="it5">
+            <label for='iced Peach Green Tea'><input type='radio' name="coffeeChoice4" value='iced Peach Green Tea'> iced Peach Green Tea </label>
+          </div>
+        </section>
+        
+        <section class="Breakfast Sandwiches"> 
+          <strong >Breakfast Sandwiches: </strong>
+          <div class="bs1">
+            <label for='bacon eggs & cheese sandwich'><input type='radio' name="coffeeChoice5" value='bacon eggs & cheese sandwich'>bacon eggs & cheese sandwich  </label>
+          </div>
+          <div class="bs2">
+            <label for='turkey eggs & cheese sandwich'><input type='radio' name="coffeeChoice5" value='turkey eggs & cheese sandwich'> turkey eggs & cheese sandwich </label>
+          </div>
+          <div class="bs3">
+            <label for='sausage eggs & cheese sandwich'><input type='radio' name="coffeeChoice5" value='sausage eggs & cheese sandwich'> sausage eggs & cheese sandwich </label>
+          </div>
+          <div class="bs4">
+            <label for='eggs & cheese sandwich'><input type='radio' name="coffeeChoice5" value='eggs & cheese sandwich'> eggs & cheese sandwich</label>
+          </div>
+          
+          <div class="bs5">
+            <label for='Sourdough Breakfast Sandwich'><input type='radio' name="coffeeChoice5" value='Sourdough Breakfast Sandwich'> Sourdough Breakfast Sandwich  </label>
+          </div>
+        </section>
+        </div>
+
+      <section id="barista">
+        <!-- <p id="loginSignUpBaristas">Baristas: </p> -->
+        
+      <h3 id="loginSignUp"> Baristas, access orders here:</h3><br>
+      <button class="loginButton"> <a href="/login"> Log In </a> </button>
+      <button class="signUpButton"> <a href="/signup"> Sign Up </a> </button>
+      </section>
     
-    
-    </div>
-  </body>
-</html>
+      <section>
+          <input type="text" placeholder="Special Instructions/" name="coffeeInstructions">  
+          <input type="text" placeholder="Your name here!" name="customerName">
+          <button type="submit">Submit Order</button>
+          <a class="login" href="/login">Barista Account</a>
+      </section>
+      </form>
+          
+        </body>
+        </html>
+        

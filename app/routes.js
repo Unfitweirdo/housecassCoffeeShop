@@ -1,4 +1,5 @@
 const { url } = require("inspector");
+const express = require("express");
 
 module.exports = function (app, passport, db) {
   // normal routes ===============================================================
@@ -53,8 +54,12 @@ module.exports = function (app, passport, db) {
   app.post("/savedToDatabase", (req, res) => {
     db.collection("orders").insertOne(
       {
-        coffeeChoice: req.body.coffeeChoice,
         customerName: req.body.customerName,
+        coffeeChoice: req.body.coffeeChoice,
+        coffeeChoice2: req.body.coffeeChoice2,
+        coffeeChoice3: req.body.coffeeChoice3,
+        coffeeChoice4: req.body.coffeeChoice4,
+        coffeeChoice5: req.body.coffeeChoice5,
         coffeeInstructions: req.body.coffeeInstructions,
         baristaName: "",
         //create a property for the baristaName
@@ -72,9 +77,14 @@ module.exports = function (app, passport, db) {
   app.put("/savedToDatabase", (req, res) => {
     db.collection("orders").findOneAndUpdate(
       {
-        coffeeChoice: req.body.coffeeChoice,
         customerName: req.body.customerName,
+        coffeeChoice: req.body.coffeeChoice,
+        coffeeChoice2: req.body.coffeeChoice2,
+        coffeeChoice3: req.body.coffeeChoice3,
+        coffeeChoice4: req.body.coffeeChoice4,
+        coffeeChoice5: req.body.coffeeChoice5,
         coffeeInstructions: req.body.coffeeInstructions,
+        baristaName: "",
       },
       {
         $set: {
@@ -116,7 +126,15 @@ module.exports = function (app, passport, db) {
 
   app.delete("/deleteOrders", (req, res) => {
     db.collection("orders").findOneAndDelete(
-      { coffeeChoice: req.body.coffeeChoice, customerName:req.body.customerName },
+      {customerName: req.body.customerName,
+        coffeeChoice: req.body.coffeeChoice, 
+        coffeeChoice2: req.body.coffeeChoice2, 
+        coffeeChoice3: req.body.coffeeChoice3, 
+        coffeeChoice4: req.body.coffeeChoice4, 
+        coffeeChoice5: req.body.coffeeChoice5,
+        customerInstructions: req.body.customerInstructions,
+        baristaName: "",}
+
       (err, result) => {
         if (err) return res.send(500, err);
         res.send("Message deleted!");

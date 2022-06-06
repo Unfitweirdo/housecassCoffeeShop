@@ -1,8 +1,5 @@
 ## Installation
 
-
-## Installation
-
 1. Clone repo
 2. run `npm install`
 
@@ -11,7 +8,6 @@
 1. run `node server.js`
 2. Navigate to `localhost:8080`
 
-## Languages
+## Credit
 
-Languages used
-HTML, CSS, Javascript, Express, Node.js, Mongodb
+Modified from Scotch.io's auth tutorial
