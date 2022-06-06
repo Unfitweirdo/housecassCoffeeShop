@@ -12,6 +12,6 @@
 1. run `npm run start`
 2. Navigate to `localhost:8885`
 
-## Credit
+## languages
 
-Modified from Scotch.io's auth tutorial
+Html, Css, Js, Node.js, Express, MongoDb
